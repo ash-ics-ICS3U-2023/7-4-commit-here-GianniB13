@@ -6,8 +6,22 @@
 
 let clicks = 0;
 
-document.getElementById("my_button").addEventListener("click", my_func)
+document.getElementById("add_click_btn").addEventListener("click", add)
+document.getElementById("subtract_click_btn").addEventListener("click", subtract)
+document.getElementById("reset_click_btn").addEventListener("click", reset)
 
-function my_func() {
-  console.log("I was clicked!")
+function add() {
+ document.getElementById("Click_count").textContent = 
+ clicks+1;
+ clicks++;
 }
+function subtract() {
+  document.getElementById("Click_count").textContent = 
+  clicks-1;
+  clicks--;
+ }
+ function reset() {
+  document.getElementById("Click_count").textContent = 
+  clicks=0;
+  clicks=0;
+ }

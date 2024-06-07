@@ -11,17 +11,17 @@ document.getElementById("subtract_click_btn").addEventListener("click", subtract
 document.getElementById("reset_click_btn").addEventListener("click", reset)
 
 function add() {
- document.getElementById("Click_count").textContent = 
+ document.getElementById("click_count").textContent = 
  clicks+1;
  clicks++;
 }
 function subtract() {
-  document.getElementById("Click_count").textContent = 
+  document.getElementById("click_count").textContent = 
   clicks-1;
   clicks--;
  }
  function reset() {
-  document.getElementById("Click_count").textContent = 
+  document.getElementById("click_count").textContent = 
   clicks=0;
   clicks=0;
  }
